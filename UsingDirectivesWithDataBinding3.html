@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="myApp">
+<head>
+	<title>Using AngularJS Directives and Data Binding</title>
+	<script src="scripts/angular.min.js"></script>
+
+</head>
+<body>
+	<!-- https://www.youtube.com/watch?v=i9MHigUZKEM -->
+
+    <div data-ng-controller="personController">
+
+        First Name: <input type="text" data-ng-model="firstName" /><br />
+        Last Name: <input type="text" data-ng-model="lastName" /><br />
+        <br />
+        Full Name: {{ fullName() }}
+    </div>
+    
+	<script>
+        var app = angular.module("myApp", []);
+        
+        app.controller('personController', function($scope) {
+			$scope.firstName = "John",
+			$scope.lastName = "Doe",
+			$scope.fullName = function () {
+				return $scope.firstName + " " + $scope.lastName;
+			}
+        });
+	</script>
+</body>
+</html>

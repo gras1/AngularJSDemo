@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="myApp">
+<head>
+    <title>Using AngularJS Directives and Data Binding</title>
+</head>
+<body>
+    <div data-ng-controller="SimpleController">
+        Name:
+        <br />
+        <input type="text" data-ng-model="name" />
+        <br />
+        <h3>Looping with the ng-repeat Directive</h3>
+        <ul>
+            <li data-ng-repeat="cust in customers | filter:name | orderBy:'city'">{{ cust.name | uppercase }} - {{ cust.city | lowercase }}</li>
+        </ul>
+    </div>
+    <script src="scripts/angular.min.js"></script>
+    <!-- https://www.youtube.com/watch?v=i9MHigUZKEM  37:00 -->
+
+    <script>
+        var app = angular.module("myApp", []);
+
+        app.controller('SimpleController', function($scope) {
+            $scope.customers = [
+                { name: 'John Smith', city: 'Phoenix' },
+                { name: 'Graham Fearn', city: 'Peterborough' },
+                { name: 'Gary Saul', city: 'Barnsley' }
+            ];
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+C:\Source\Spikes\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\AngularJSDemo.dll.config
+C:\Source\Spikes\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\AngularJSDemo.dll
+C:\Source\Spikes\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\AngularJSDemo.pdb
+C:\Source\Spikes\AngularJSDemo\AngularJSDemo\AngularJSDemo\obj\Debug\AngularJSDemo.csprojResolveAssemblyReference.cache
+C:\Source\Spikes\AngularJSDemo\AngularJSDemo\AngularJSDemo\obj\Debug\AngularJSDemo.dll
+C:\Source\Spikes\AngularJSDemo\AngularJSDemo\AngularJSDemo\obj\Debug\AngularJSDemo.pdb
